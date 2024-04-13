@@ -1,5 +1,7 @@
-# Angular - Shrouk
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
+# Angular Project
+- Introducing my Angular-based platform tailored for showcasing drugs and medicines from various companies. This open-source project offers a modular, responsive, and feature-rich interface, making it easy for users to explore and compare medications. With a focus on scalability and security, our platform provides a comprehensive database of pharmaceutical products, organized by company. Developers can easily customize and extend the platform to incorporate new features or integrate additional data sources. Join our community-driven effort to revolutionize access to medical information and empower users with valuable insights into pharmaceutical options.
+  
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
 
 ## Development server
 
