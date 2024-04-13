@@ -1,0 +1,40 @@
+<section id="product-details-section">
+  <div class="single_product_wrapper">
+    <div class="container bg-white py-3 px-2 rounded">
+      <div class="row">
+        <div class="col-lg-5 col-md-6">
+          <div class="product_gallery">
+            <div class="tab-content produc_thumb_conatainer mb-3">
+              <div
+                class="tab-pane fade show active"
+                id="p_tab1"
+                role="tabpanel"
+              >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <div class="product_details">
+            <h3 class="text-capitalize">{{selectedProduct.productName}}</h3>
+            <div class="product_price">
+              <span class="current_price">{{selectedProduct.price}}</span>
+              <span class="old_price ms-2">{{selectedProduct.price+50}}</span>
+            </div>
+            <div class="product_description">
+              <p>{{selectedProduct.description}}</p>
+            </div>
+            <div class="product_details_action">
+              <h3>Available Options: {{selectedProduct.quantity}} Piece</h3>
+              <div class="product_action_link">
+                <button class="btn btn-danger text-white w-75">
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

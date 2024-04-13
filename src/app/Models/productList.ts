@@ -1,0 +1,15 @@
+import { Iproduct } from "./iproduct";
+
+export let productsList: Iproduct[] = [
+  { id: 1, name: 'Roses', price: 10, quantity: 50, description: 'Classic symbol of love and beauty, available in various colors.', imgSrc: 'https://images.pexels.com/photos/818912/pexels-photo-818912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+  { id: 2, name: 'Lilies', price: 8, quantity: 30, description: 'Elegant and fragrant flowers often used in bouquets and arrangements.', imgSrc: 'https://images.pexels.com/photos/60227/pexels-photo-60227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+  { id: 3, name: 'Tulips', price: 5, quantity: 40, description: 'Colorful flowers that symbolize perfect love and springtime.', imgSrc: 'https://images.pexels.com/photos/55669/tulips-flowers-red-yellow-55669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+  { id: 4, name: 'Orchids', price: 15, quantity: 20, description: 'Exotic and graceful flowers representing love, luxury, and beauty.', imgSrc: 'https://images.pexels.com/photos/2499713/pexels-photo-2499713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+  { id: 5, name: 'Sunflowers', price: 7, quantity: 35, description: 'Bright and cheerful flowers symbolizing adoration, loyalty, and longevity.', imgSrc: 'https://images.pexels.com/photos/1342461/pexels-photo-1342461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+  { id: 6, name: 'Daisies', price: 4, quantity: 45, description: 'Simple yet charming flowers representing purity, innocence, and new beginnings.', imgSrc: 'https://images.pexels.com/photos/129513/pexels-photo-129513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+  { id: 7, name: 'Peonies', price: 12, quantity: 25, description: 'Fragrant and lush flowers symbolizing prosperity, romance, and good fortune.', imgSrc: 'https://images.pexels.com/photos/56484/peony-flower-rose-pink-56484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+  { id: 8, name: 'Hydrangeas', price: 9, quantity: 30, description: 'Clusters of delicate flowers symbolizing gratitude, sincerity, and heartfelt emotions.', imgSrc: 'https://images.pexels.com/photos/562770/pexels-photo-562770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+  { id: 9, name: 'Daffodils', price: 6, quantity: 40, description: 'Bright and cheerful flowers representing new beginnings and rebirth.', imgSrc: 'https://images.pexels.com/photos/204154/pexels-photo-204154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+  { id: 10, name: 'Carnations', price: 3, quantity: 50, description: 'Versatile flowers available in various colors symbolizing love, admiration, and fascination.', imgSrc: 'https://images.pexels.com/photos/6374/rose-red-flower.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+  { id: 11, name: 'Cherry Blossoms', price: 11, quantity: 25, description: 'Delicate and ephemeral flowers symbolizing the beauty of life, renewal, and the fleeting nature of existence.', imgSrc: 'https://images.pexels.com/photos/185961/pexels-photo-185961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' },
+];

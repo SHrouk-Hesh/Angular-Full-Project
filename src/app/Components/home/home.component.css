@@ -1,0 +1,243 @@
+img{
+  width: 200%;
+  height: 100vh;
+  object-fit: cover;
+}
+/* Newsletter Styles */
+.newsletter {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsletter .newsletter_shape {
+  width: 100%;
+  height: 100%;
+  background-color: #930616;
+  position: absolute;
+  top: 0;
+  left: 39%;
+  transform: skew(-38deg);
+}
+
+@media (max-width: 1400px) {
+  .newsletter .newsletter_shape {
+    transform: skew(-12deg);
+    left: 10%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .newsletter .newsletter_shape {
+    left: 0%;
+    transform: initial;
+  }
+}
+
+.newsletter .newsletter_thumb {
+  position: absolute;
+  background-image: url(node_modules/@schematics/angular/application/files/common-files/src/assets/redFlower.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  background-color: rgba(255, 143, 206, 0.805);
+  height: 100%;
+  width: 54%;
+}
+
+@media (max-width: 1991px) {
+  .newsletter .newsletter_thumb {
+    display: none;
+  }
+}
+
+.newsletter .newsletter_text {
+  padding: 120px 90px 140px;
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+@media (max-width: 1400px) {
+  .newsletter .newsletter_text {
+    padding: 120px 60px 140px;
+  }
+}
+
+@media (max-width: 991px) {
+  .newsletter .newsletter_text {
+    padding: 70px 30px 80px;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.newsletter .newsletter_title {
+  margin-bottom: 6px;
+}
+
+.newsletter .newsletter_subtitle {
+  margin-bottom: 34px;
+}
+
+.newsletter .newsletter_form {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 991px) {
+  .newsletter .newsletter_form {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .newsletter .newsletter_form {
+    flex-direction: column;
+  }
+
+  .newsletter .newsletter_form .btn {
+    width: 100%;
+  }
+}
+
+.newsletter .form_field {
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 0;
+}
+
+@media (max-width: 450px) {
+  .newsletter .form_field {
+    padding: 9px 20px;
+  }
+}
+
+.newsletter.style_2 {
+  padding: 120px 60px 140px;
+}
+
+@media (max-width: 991px) {
+  .newsletter.style_2 {
+    padding: 70px 30px 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .newsletter.style_2 {
+    padding: 70px 20px 80px;
+  }
+}
+
+.newsletter.style_2 .newsletter_text {
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter.style_2 .newsletter_form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 575px) {
+  .newsletter.style_2 .newsletter_form {
+    flex-direction: column;
+  }
+}
+
+.newsletter.style_2 .btn.style_1 {
+  display: inline-block;
+  background-color: #bf2a3b;
+  color: #ffffff;
+  border-color: #bf2a3b;
+}
+
+.newsletter.style_2 .btn.style_1:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.newsletter.style_2 .newsletter_title {
+  margin-bottom: 6px;
+}
+
+.newsletter.style_2 .newsletter_subtitle {
+  margin-bottom: 34px;
+}
+
+.newsletter.style_2 .form_field {
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 0;
+}
+
+.newsletter.style_2 .newsletter_shape1 {
+  bottom: 0;
+  right: 3%;
+}
+
+@media (max-width: 991px) {
+  .newsletter.style_2 .newsletter_shape1 {
+    display: none;
+  }
+}
+
+.newsletter.style_2 .newsletter_shape2 {
+  top: 0;
+  left: 3%;
+  transform: translate(5%, 0%) rotate(180deg);
+}
+
+@media (max-width: 991px) {
+  .newsletter.style_2 .newsletter_shape2 {
+    display: none;
+  }
+}
+
+.newsletter_title {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.newsletter_subtitle {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.btn.style_1 {
+  display: inline-block;
+  background-color: #070707;
+  color: #ffffff;
+  border: 2px solid #070707;
+  padding: 13px 32px;
+  text-align: center;
+}
+
+.form_field {
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(180, 64, 145, 0.685);
+  padding: 12px 23px;
+  transition: all 0.3s ease;
+  line-height: 1.5em;
+  display: block;
+}

@@ -1,0 +1,43 @@
+<table class="table align-middle mb-0 bg-white">
+  <thead class="bg-light">
+    <tr>
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>
+        <div class="d-flex align-items-center">
+          <p class="fw-bold mb-1">{{ product.productName }}</p>
+        </div>
+      </td>
+      <td>
+        {{ product.price | currency }}
+      </td>
+      <td>{{ product.quantity }}</td>
+      <td>
+        <button
+          class="btn btn-primary btn-sm mx-1"
+          [routerLink]="['/products', product.id]"
+        >
+          <i class="bi bi-eye"></i>
+        </button>
+        <button
+          class="btn btn-warning text-white btn-sm mx-1"
+          [routerLink]="['/products', product.id, 'edit']"
+        >
+          <i class="bi bi-pencil"></i>
+        </button>
+        <button
+          class="btn btn-danger btn-sm mx-1"
+          (click)="deleteProductHandle(product.id)"
+        >
+          <i class="bi bi-trash3"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

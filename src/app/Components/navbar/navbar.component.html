@@ -1,0 +1,57 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid py-2">
+    <span class="navbar-brand" href="/">
+      <a class="text-danger fw-bold lead mt-2 text-decoration-none" [routerLink]="'/'">TechHaven E-Commerce Flowers Store</a>
+    </span>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item ms-3">
+          <button
+            class="nav-link active"
+            id="home-btn"
+            [routerLink]="['/']"
+            [routerLinkActive]="'text-danger'"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            Flowers Store Main Page
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            class="nav-link"
+            id="about-us"
+            [routerLink]="['/products']"
+            [routerLinkActive]="'text-danger'"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            Products Page
+          </button>
+        </li>
+        <li class="nav-item">
+          <button
+            class="nav-link"
+            id="about-us"
+            [routerLink]="['products', '0', 'edit']"
+            [routerLinkActive]="'text-danger'"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            Adding | Editing Products Page
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End of Navbar -->
